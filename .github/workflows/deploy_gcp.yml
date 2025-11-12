@@ -3,7 +3,7 @@ name: Build & Deploy to GKE using Helm
 on:
   push:
     branches:
-      - to_service_controller
+      - main
     tags:
       - 'v*'
 
