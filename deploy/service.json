@@ -1,7 +1,7 @@
 {
   "$schema": "urn:ivcap:schema.service.2",
   "$id": "#SERVICE_ID#",
-  "name": "ivcap-entrez-service-runner",
+  "name": "ivcap-crewai-service-runner",
   "description": "A service to run all the IVCAP Crews",
   "parameters": [],
   "policy": "urn:ivcap:policy:ivcap.open.service",
