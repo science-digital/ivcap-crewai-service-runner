@@ -1,0 +1,25 @@
+{
+  "$schema": "urn:ivcap:schema.service.2",
+  "$id": "#SERVICE_ID#",
+  "name": "ivcap-entrez-service-runner",
+  "description": "A service to run all the IVCAP Crews",
+  "parameters": [],
+  "policy": "urn:ivcap:policy:ivcap.open.service",
+  "controller-schema": "urn:ivcap:schema.service.rest.1",
+  "controller": {
+    "$schema": "urn:ivcap:schema.service.rest.1",
+    "image": "#DOCKER_IMG#",
+    "resources": {
+      "limits": {
+        "cpu": "8",
+        "memory": "8Gi",
+        "ephemeral-storage": "8Gi"
+      },
+      "requests": {
+        "cpu": "8",
+        "memory": "8Gi",
+        "ephemeral-storage": "8Gi"
+      }
+    }
+  }
+}

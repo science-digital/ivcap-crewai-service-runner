@@ -3,7 +3,7 @@ name: Build & Deploy to GKE using Helm
 on:
   push:
     branches:
-      - main
+      - to_service_controller
     tags:
       - 'v*'
 
@@ -25,6 +25,6 @@ jobs:
       M2M_AUTH0_CLIENT_SECRET_DEVELOP: ${{ secrets.M2M_AUTH0_CLIENT_SECRET_DEVELOP }}
       M2M_AUTH0_CLIENT_SECRET_PROD: ${{ secrets.M2M_AUTH0_CLIENT_SECRET_PROD }}
     with:
-      SERVICE_NAME: ivcap-crewai-service
+      SERVICE_NAME: ivcap-crewai-service-runner
       DOCKER_FILE: Dockerfile
       SERVICE_JSON_FILE: ./deploy/service.json
